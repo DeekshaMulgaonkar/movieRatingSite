@@ -1,0 +1,19 @@
+.tableView{
+    border-radius: 4px;
+    width: 103%;
+    margin-left: 1%;
+}
+.form-signin{
+    margin-top:5%
+}
+.textStyle{
+    margin:0px auto;
+    width:30%
+}
+.indentStyle{
+    margin-left: 1%;
+}
+#myInput{
+    float: right;
+    margin-top: 1%;
+}

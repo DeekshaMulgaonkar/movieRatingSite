@@ -1,0 +1,17 @@
+#rateMe{
+    margin-left: 27%;
+    margin-top: 18%;
+    border: 1px solid #526ce2;
+    padding: 3%;
+    width: 50%;
+    border-radius: 4px;
+}
+
+#submitButton{
+    margin-left: 71%;
+    margin-top: 4%;
+}
+
+#rateInput{
+    margin-left:28%;
+}

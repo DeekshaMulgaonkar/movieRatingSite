@@ -1,0 +1,9 @@
+<div id="rateMe">
+  Rate 
+  <input type="number" [(ngModel)]="rate" #input required id="rateInput" max="5" min="0" (ngModelChange)="onKey($event, input.value)">
+  <a  routerLink="/dashboard">
+  <div>
+  <button (click)="submit($event, input.value)" id="submitButton" class="btn btn-success">Submit</button>
+  </div>
+  </a>
+</div>

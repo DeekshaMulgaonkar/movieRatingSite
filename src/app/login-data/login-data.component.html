@@ -1,0 +1,35 @@
+<div class="container">
+    <input type="text" (keyup)="searchByname()" placeholder="Search for names..." id="myInput">
+    <table class="table table-hover" id="myTable">
+        <thead>
+            <tr>
+            <th>Movie Name</th>
+            <th>Release Date</th>
+            <th>Rating </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let movie of values; let i = index ">
+            <td>
+                {{movie.name}}
+            </td>
+            <td>
+                    {{movie.releaseDate}}
+            </td>
+            <td>
+                    {{avgRating(movie.rating)}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="text-center">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal textStyle">Please Log in</h1>
+        <input type="email" id="inputEmail" class="form-control textStyle" placeholder="Email address" autofocus #email>
+        <input type="password" id="inputPassword" #pswrd class="form-control textStyle" placeholder="Password" required >
+        <button (click)="login(email.value, pswrd.value)" id="button" type="button" class="btn btn-success textStyle">Login</button>
+    </form>
+    Not a member? <a routerLink="/register"> Register</a>
+</div>

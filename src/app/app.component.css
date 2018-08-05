@@ -1,0 +1,16 @@
+.fontStyle{
+    font-family: cursive;
+}
+
+#fontWidth{
+    width: 48%;
+}
+
+.loginButton{
+    margin-top:-5%; 
+    float:right; 
+    font-size:150%
+}
+.indentStyle{
+    margin-left:1%;
+}

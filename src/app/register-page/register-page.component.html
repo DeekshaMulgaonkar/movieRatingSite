@@ -1,0 +1,13 @@
+
+ <body class="text-center">
+    <form class="form-signin" id="formStyling">
+      <h1 class="h3 mb-3 font-weight-normal textStyle">Register Here</h1>
+      <label id="nameIndent">Name : </label>
+      <input type="text" id="inputName" class="form-control textStyle" placeholder=" Name" required autofocus #name>
+      <label id="emailIndent">Email address : </label>
+      <input type="email" id="inputEmail" class="form-control textStyle" placeholder="Email address" required autofocus #email >
+      <label id="pswrdIndent">Password : </label>
+      <input type="password" id="inputPassword" #pswrd class="form-control textStyle" placeholder="Password" required>
+      <button (click)="submit(name.value, email.value, pswrd.value)" id="button" type="button" class="btn btn-success textStyle" >Register</button>
+    </form>
+  </body>

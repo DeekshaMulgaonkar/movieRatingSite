@@ -1,0 +1,19 @@
+.textStyle{
+    margin:0px auto; 
+    width:30%
+}
+#pswrdIndent{
+    margin-left:-21%;
+}
+
+#emailIndent{
+    margin-left:-17%;
+}
+
+#nameIndent{
+    margin-left:-24%;
+}
+
+#formStyling{
+    margin-top:15%;
+}
