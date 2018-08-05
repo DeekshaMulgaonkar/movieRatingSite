@@ -1,26 +1,4 @@
 
-<!--<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          <input type="text" placeholder="search"> search
-          <input type="text" placeholder="sortBy"> sort
-        </div>
-        <div class="col-md-8" *ngFor="let movie of values; let i = index " routerLink="/rating/{{movie.id}}">
-          <div>
-            Name {{movie.name}}
-          </div>
-          <div>
-            Release Date: {{movie.releaseDate}}
-          </div>
-          <div>
-            Rating: {{avgRating(movie.rating)}}
-          </div>
-           <a routerLink="/rating/{{movie.id}}">give rating</a>
-           
-        </div>
-    </div>
-</div>-->
-
 <div class="container">
     <div class="row">
          <table class="table table-hover">
@@ -32,7 +10,7 @@
                  </tr>
             </thead>
             <tbody>
-            <tr class="col-md-8" *ngFor="let movie of values; let i = index " routerLink="/rating/{{movie.id}}">
+            <tr *ngFor="let movie of values; let i = index " routerLink="/rating/{{movie.id}}">
                 <td>
                     {{movie.name}}
                 </td>
